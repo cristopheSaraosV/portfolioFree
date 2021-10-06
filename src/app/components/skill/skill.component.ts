@@ -5,6 +5,11 @@ import { Skill } from 'src/app/interfaces/skill.interface';
   selector: 'app-skill',
   templateUrl: './skill.component.html',
   styles: [
+      `
+      img{
+          width:100%
+      }
+      `
   ]
 })
 export class SkillComponent implements OnInit {
@@ -13,8 +18,10 @@ export class SkillComponent implements OnInit {
 
 
   @Input('skill') skill!:Skill
-  
+
   ngOnInit(): void {
   }
+
+  
 
 }

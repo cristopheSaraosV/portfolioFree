@@ -1,4 +1,20 @@
-<section class="mt-4 container">
+<!-- Profile -->
+<section id="profile" class="mt-4 container">
+    <div class="row justify-content-sm-center justify-content-md-center">
+        <div class="col-sm-8 col-md-">
+            <app-who-i-am
+                [name]="profile.name"
+                [description]="profile.description"
+                [profession]="profile.profession"
+                [img]="profile.img"
+               ></app-who-i-am>    
+        </div>
+        
+    </div>
+</section>
+
+<!-- My experiences -->
+<section id="My experiences">
     <div class="row justify-content-sm-center justify-content-md-center">
         <div class="col-sm-8 col-md-">
             <app-who-i-am
