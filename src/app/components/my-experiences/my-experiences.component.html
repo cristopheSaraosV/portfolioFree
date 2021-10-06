@@ -1,0 +1,37 @@
+<div class="card mb-3">
+    <div class="row g-0">
+     
+      <div class="col-md-12">
+        <div class="card-body">
+          <h5 class="card-title">My work experience</h5>
+          <p class="card-text">List of exercise jobs</p>
+        </div>
+
+        <div class="row ms-2">
+            <div *ngFor="let work of workExperience" class="col-sm-12  col-md-6">
+                <dl class="row">
+                    <dt class="col-sm-4">Company:</dt>
+                    <dd class="col-sm-8">{{work.company}}</dd>
+                  
+                    <dt class="col-sm-4">work position:</dt>
+                    <dd class="col-sm-8">
+                      <p>{{work.workPosition}}</p>
+                    </dd>
+
+                    <dt class="col-sm-4">Admission date:</dt>
+                    <dd class="col-sm-8">{{work.admissionDate}}</dd>
+                  
+                    <dt class="col-sm-4 ">Departure date:</dt>
+                    <dd class="col-sm-8">{{work.departureDate}}</dd>
+                  
+                    
+                    
+                  </dl>
+            </div>
+          
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
