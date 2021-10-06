@@ -10,9 +10,9 @@ import { WhoIAmComponent } from './components/who-i-am/who-i-am.component';
 import { SocialNetworksComponent } from './components/social-networks/social-networks.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { InfoContactComponent } from './components/info-contact/info-contact.component';
-import { SkillComponent } from './components/skill/skill.component';
+import { SkillComponent } from './components/skills/skill/skill.component';
 import { MyExperiencesComponent } from './components/my-experiences/my-experiences.component';
-import { PersonalSkillsComponent } from './components/personal-skills/personal-skills.component';
+import { PersonalSkillsComponent } from './components/skills/personal-skills/personal-skills.component';
 
 @NgModule({
   declarations: [

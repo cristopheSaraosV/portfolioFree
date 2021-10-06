@@ -20,10 +20,28 @@
 <!-- My experiences -->
 <section id="My experiences">
     <div class="row justify-content-sm-center justify-content-md-start ms-md-4">
+        <div class="col-11 col-sm-8 col-md-11 mx-sm-2 mb-sm-3 ">
+            <h2>Experience</h2>
+        </div>
         <div class="col-sm-8 col-md-11">
           <app-my-experiences
           [workExperience]="workExperience">              
           </app-my-experiences>
+        </div>
+        
+    </div>
+</section>
+
+<!-- My personal skills -->
+<section id=" myPersonalSkills">
+    <div class="row justify-content-sm-center justify-content-md-start ms-md-4">
+        <div class="col-11 col-sm-8 col-md-11 mx-sm-2 mb-sm-3 ">
+            <h2> My personal skills</h2>
+        </div>
+        <div *ngFor="let skill of personalSkill" class="col-sm-8 col-md-3">
+          <app-personal-skills
+          [personalSkill]="skill">              
+          </app-personal-skills>
         </div>
         
     </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { personalSkill } from 'src/app/interfaces/personalSkill.interface';
 import { profile } from 'src/app/interfaces/profile.interface';
 import { workExperience } from 'src/app/interfaces/workExperience.interface';
 
@@ -14,6 +15,7 @@ export class HomeComponent implements OnInit {
 
   profile!: profile;
   workExperience!: workExperience[];
+  personalSkill!: personalSkill[];
 
   ngOnInit(): void {
       this.profile = {
@@ -37,6 +39,13 @@ export class HomeComponent implements OnInit {
             departureDate:'06/02/2021',
             workPosition:'Programmer analyst'
         }
+      ];
+
+      this.personalSkill = [
+          {
+              name:'Mourn',
+              description:'I cry every time, my phrase is always a time to cry.'
+          }
       ]
   }
 

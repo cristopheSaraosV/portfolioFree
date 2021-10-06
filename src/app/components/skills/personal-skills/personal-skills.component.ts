@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { personalSkill } from 'src/app/interfaces/personalSkill.interface';
 
 @Component({
   selector: 'app-personal-skills',
@@ -10,6 +11,8 @@ export class PersonalSkillsComponent implements OnInit {
 
   constructor() { }
 
+  @Input('personalSkill') personalSkill!: personalSkill; 
+  
   ngOnInit(): void {
   }
 
