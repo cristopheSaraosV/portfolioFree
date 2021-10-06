@@ -17,7 +17,7 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
     this.infoContact = {
         email:'cristopher.saraos@gmail.com',
-        nationality:'Chilean',
+        nationality:'analista programador',
         number:56957332633
     }
 }
