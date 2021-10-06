@@ -11,6 +11,7 @@ import { SocialNetworksComponent } from './components/social-networks/social-net
 import { ContactComponent } from './pages/contact/contact.component';
 import { InfoContactComponent } from './components/info-contact/info-contact.component';
 import { SkillComponent } from './components/skill/skill.component';
+import { MyExperiencesComponent } from './components/my-experiences/my-experiences.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SkillComponent } from './components/skill/skill.component';
     WhoIAmComponent,
     SocialNetworksComponent,
     InfoContactComponent,
-    SkillComponent
+    SkillComponent,
+    MyExperiencesComponent
   ],
   imports: [
     BrowserModule,

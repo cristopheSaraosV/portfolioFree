@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { profile } from 'src/app/interfaces/profile.interface';
+import { workExperience } from 'src/app/interfaces/workExperience.interface';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +13,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   profile!: profile;
+  workExperience!: workExperience[];
 
   ngOnInit(): void {
       this.profile = {
@@ -20,7 +22,22 @@ export class HomeComponent implements OnInit {
           img:'../../../assets/img/profile.jpg',
           profession:'Web developer',
 
-      }
+      };
+
+      this.workExperience = [
+          {
+              company:'Siigroup',
+              admissionDate:'20/10/2020',
+              departureDate:'06/02/2021',
+              workPosition:'Programmer analyst'
+          },
+          {
+            company:'Siigroup',
+            admissionDate:'20/10/2020',
+            departureDate:'06/02/2021',
+            workPosition:'Programmer analyst'
+        }
+      ]
   }
 
 }
